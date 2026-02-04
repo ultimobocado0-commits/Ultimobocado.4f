@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Último Bocado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff1c1, #ffd6e0, #c1f0f6);
+    color: #2b2b2b;
+}
+
+header {
+    background: radial-gradient(circle, #ff006e, #8338ec, #3a86ff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.aviso {
+    background: #ffbe0b;
+    color: #000;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #ffbe0b;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #8338ec;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 4px solid #ffd166;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ff006e;
+}
+
+.precio {
+    font-weight: bold;
+    color: #06d6a0;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.info-box {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 4px solid #3a86ff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍽️ Último Bocado</h1>
+    <p>Donde siempre apetece uno más</p>
+</header>
+
+<div class="aviso">
+⚠️ Aviso: Nuestro menú cambia constantemente según temporada y creatividad del chef.
+</div>
+
+<nav>
+    <a href="#menu">Menú</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#info">Información</a>
+</nav>
+
+<section id="menu">
+<h2>🥘 Menú</h2>
+
+<h3>🍔 Comidas</h3>
+<div class="menu-grid">
+    <div class="card"><h3>Huevos Rotos</h3><p>Con patatas y jamón</p><p class="precio">6,50 €</p></div>
+    <div class="card"><h3>Hamburguesa de la Casa</h3><p>Carne, queso y salsa especial</p><p class="precio">7,90 €</p></div>
+    <div class="card"><h3>Pizza de la Casa</h3><p>Tomate, mozzarella y toppings</p><p class="precio">7,50 €</p></div>
+    <div class="card"><h3>Pasta</h3><p>Con salsa casera</p><p class="precio">6,00 €</p></div>
+    <div class="card"><h3>Pollo Frito</h3><p>Crujiente y especiado</p><p class="precio">6,90 €</p></div>
+    <div class="card"><h3>Patatas Fritas</h3><p>Clásicas</p><p class="precio">2,50 €</p></div>
+    <div class="card"><h3>Patatas Bravas</h3><p>Con salsa picante</p><p class="precio">3,50 €</p></div>
+    <div class="card"><h3>Nuggets</h3><p>De pollo</p><p class="precio">4,00 €</p></div>
+    <div class="card"><h3>Lasaña</h3><p>Carne y queso</p><p class="precio">7,00 €</p></div>
+    <div class="card"><h3>Wrap Vegetal</h3><p>Fresco y ligero</p><p class="precio">5,50 €</p></div>
+</div>
+
+<h3>🥤 Bebidas</h3>
+<div class="menu-grid">
+    <div class="card"><h3>Agua</h3><p class="precio">1,50 €</p></div>
+    <div class="card"><h3>Té</h3><p class="precio">2,00 €</p></div>
+    <div class="card"><h3>Refrescos</h3><p class="precio">2,50 €</p></div>
+    <div class="card"><h3>Vino Tinto</h3><p class="precio">3,50 €</p></div>
+    <div class="card"><h3>Vino Blanco</h3><p class="precio">3,50 €</p></div>
+    <div class="card"><h3>Vino Rosado</h3><p class="precio">3,50 €</p></div>
+</div>
+
+<h3>🍰 Postres</h3>
+<div class="menu-grid">
+    <div class="card"><h3>Helados</h3><p>Vainilla, chocolate, fresa</p><p class="precio">3,00 €</p></div>
+    <div class="card"><h3>Tartas</h3><p>Queso, chocolate, limón</p><p class="precio">4,00 €</p></div>
+    <div class="card"><h3>Granizados Caseros</h3><p>Limón, mango, fresa</p><p class="precio">3,50 €</p></div>
+    <div class="card"><h3>Fruta</h3><p>De temporada</p><p class="precio">2,50 €</p></div>
+</div>
+</section>
+
+<section id="contacto">
+<h2>📞 Contacto</h2>
+<div class="info-box">
+    <p>¿Tienes dudas o quieres hacer un pedido?</p>
+    <p><strong>Teléfono:</strong> 612 345 678</p>
+</div>
+</section>
+
+<section id="info">
+<h2>ℹ️ Información</h2>
+<div class="info-box">
+    <p><strong>📍 Ubicación:</strong> Zaragoza, barrio de Delicias</p>
+    <p><strong>🕒 Horario:</strong> 9:00 a 23:00</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Último Bocado · Zaragoza</p>
+</footer>
+
+</body>
+</html>
